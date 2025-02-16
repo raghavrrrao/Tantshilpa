@@ -86,7 +86,7 @@ export let products = [
     {
         "id": 15,
         "name": "Cotton Silk Kosa Saree",
-        "image": "images/Cotton-silk-Kosa-saree.jpg",
+        "image": "images/Cotton-silk-kosa-saree.jpg",
         "description": "A Cotton Silk Kosa Saree is a traditional handwoven saree made from a blend of Kosa silk and cotton, offering a perfect balance of softness, durability, and elegance. Kosa silk, derived from silkworms found in Chhattisgarh, India, is known for its natural texture, rich sheen, and earthy tones. The addition of cotton enhances its breathability and comfort, making it ideal for all seasons. These sarees often feature traditional motifs, zari work, and subtle patterns, making them a great choice for festivals, casual wear, and cultural events. Their lightweight feel and graceful drape add to their timeless charm."
     },
     {
