@@ -1,0 +1,496 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#backToTopBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #f39c12;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 50%;
+    /* Rounded corners */
+    height: 50px;
+    width: 50px;
+}
+
+#backToTopBtn:hover {
+    background-color: black;
+    /* Add a dark-grey background on hover */
+    color: #f45d2a;
+    border: 1px solid #f45d2a;
+}
+
+.box {
+    border: 1px solid #cf8b5c;
+    border-radius: 5px;
+    text-align: center;
+    height: 390px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.box:hover {
+    box-shadow: 0 0 15px #f45d2a;
+    /* Far outer glow */
+}
+
+.box p {
+    color: #f45d2a;
+}
+
+.contactBox {
+    border: 1px solid #cf8b5c;
+    border-radius: 5px;
+    text-align: center;
+    height: 200px;
+    color: #f45d2a;
+    transition: box-shadow 0.3s ease-in-out;
+    /* Smooth transition for the glow effect */
+}
+
+.contactBox:hover {
+    box-shadow: 0 0 15px #f45d2a;
+    /* Far outer glow */
+}
+
+.imgOuter img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.footer-bg {
+    background-color: black;
+    height: 50px;
+}
+
+.footer-text-1 {
+    color: #cf8b5c;
+    position: relative;
+    margin-left: 60px;
+    float: left;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.font-color-orange {
+    color: #f45d2a;
+}
+
+.font-color-orange:hover {
+    color: blue;
+}
+
+.footer-text-2 {
+    color: #cf8b5c;
+    position: relative;
+    margin-top: 12px;
+    font-size: 14px;
+    float: right;
+}
+
+.fade-slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.4s ease-out;
+}
+
+.fade-slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url("fonts/Raleway-Bold.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "vanguardCF-bold";
+    src: url("fonts/Fontspring-DEMO-vanguardcf-bold.otf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "vanguardCF-demibold";
+    src: url("fonts/Fontspring-DEMO-vanguardcf-demibold.otf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway-Medium";
+    src: url("fonts/Raleway-Medium.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url("fonts/Raleway-Regular.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("fonts/Poppins-Regular.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("fonts/Poppins-Bold.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins-Semi-Bold";
+    src: url("fonts/Poppins-SemiBold.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fontWeight100 {
+    font-weight: 100;
+}
+
+.fontSize16 {
+    font-size: 16px;
+}
+
+.fontSize13 {
+    font-size: 13px;
+}
+
+.fontSize46 {
+    font-size: 46px;
+}
+
+.fontSize19 {
+    font-size: 19px;
+}
+
+.fontSize30 {
+    font-size: 30px;
+}
+
+.buyBtn{
+    cursor: pointer;
+    background-color: #f45d2a;
+    color: black;
+}
+
+.imageOutlineBox{
+    border: #f45d2a 2px solid;
+    padding: 15px;
+    border-radius: 15px;
+    width: 90%;
+    object-fit: cover;
+    margin: auto
+}
+
+.imageOutlineBox img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;}
+
+.imageOutlineBox:hover {
+    box-shadow: 0 0 15px #f45d2a;
+    /* Far outer glow */
+}
+
+.buyBtn:hover{
+    color: white;
+}
+
+
+.fontSize22 {
+    font-size: 22px;
+}
+
+.fontPoppinsRegular {
+    font-family: Poppins-Regular;
+}
+
+.fontPoppinsBold {
+    font-family: Poppins-Bold;
+}
+
+.fontVanguardBold {
+    font-family: vanguardCF-bold, serif;
+}
+
+.fontPoppinsSemiBold {
+    font-family: "Poppins-Semi-Bold";
+}
+
+.carousel-inner,
+.carousel-item {
+    height: 750px;
+    /* Example height, adjust as necessary */
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* General nav-link styling */
+.nav-link {
+    font-family: Poppins-Regular !important;
+    font-size: 20px !important;
+    color: #f45d2a;
+    /* Default color */
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+}
+
+/* Style for active nav-link */
+.nav-link.active {
+    color: #cf8b5c !important;
+    /* Color when active */
+    font-weight: bold;
+    /* Optional: Make it bold */
+}
+
+.font-color_headings {
+    color: #f45d2a;
+}
+
+.font-color_data {
+    color: #cf8b5c;
+}
+
+.line-height-37 {
+    line-height: 37px;
+}
+
+.navbar-toggler {
+    color: #f45d2a;
+    /* Ensure the icon color matches your design */
+    font-size: 24px;
+    /* Adjust size for visibility */
+    border: none;
+    /* Remove default border */
+}
+
+/* Custom Active Tab Color */
+.nav-tabs .nav-link.active {
+    border: none;
+    background-color: black;
+    /* Change to your desired color */
+    color: white;
+    /* Ensures the text is white when active */
+}
+
+/* Hover Effect for Tabs */
+.nav-tabs .nav-link:hover {
+    border: none;
+    color: #cf8b5c;
+    /* Change text color to white on hover */
+    background-color: black;
+    /* Optional: Change background on hover */
+}
+
+/* Hover Effect: Remove background color from active tab */
+.nav-tabs .nav-link {
+    color: #f45d2a;
+    /* Default text color */
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.dropdown-toggle {
+    white-space: nowrap;
+    background-color: black;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.modal {
+    --bs-modal-zindex: 1055;
+    --bs-modal-width: 500px;
+    --bs-modal-padding: 1rem;
+    --bs-modal-margin: 0.5rem;
+    --bs-modal-bg: var(--bs-body-bg);
+    --bs-modal-border-color: var(--bs-border-color-translucent);
+    --bs-modal-border-width: var(--bs-border-width);
+    --bs-modal-border-radius: var(--bs-border-radius-lg);
+    --bs-modal-box-shadow: var(--bs-box-shadow-sm);
+    --bs-modal-inner-border-radius: calc(var(--bs-border-radius-lg) - (var(--bs-border-width)));
+    --bs-modal-header-padding-x: 1rem;
+    --bs-modal-header-padding-y: 1rem;
+    --bs-modal-header-padding: 1rem 1rem;
+    --bs-modal-header-border-color: var(--bs-border-color);
+    --bs-modal-header-border-width: var(--bs-border-width);
+    --bs-modal-title-line-height: 1.5;
+    --bs-modal-footer-gap: 0.5rem;
+    --bs-modal-footer-bg: ;
+    --bs-modal-footer-border-color: var(--bs-border-color);
+    --bs-modal-footer-border-width: var(--bs-border-width);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--bs-modal-zindex);
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
+
+/* WhatsApp button styling */
+.btn-success {
+    background-color: #25d366 !important;
+    border: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 8px;
+}
+
+.btn-success i {
+    font-size: 22px;
+}
+
+/* Ensure the close button is orange */
+.btn-close {
+    --bs-btn-close-color: #f45d2a !important;
+    --bs-btn-close-bg: none !important;
+    opacity: 1;
+}
+
+.btn-close:hover {
+    opacity: 0.75;
+}
+
+/* Modal title in orange */
+.modal-title {
+    color: #f45d2a !important;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-color: #000000;
+    background-clip: padding-box;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: var(--bs-modal-border-radius);
+    outline: 0;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: var(--bs-modal-title-line-height);
+    color: #f45d2a;
+}
+
+/* Ensure the modal backdrop is fully blurred */
+.modal-backdrop {
+    background-color: transparent !important;
+    /* Remove black overlay */
+    backdrop-filter: blur(50px);
+    /* Apply blur effect */
+}
+
+/* Ensure modal content remains clear */
+.modal-content {
+    background-color: black;
+    /* Keep modal background black */
+    filter: none;
+}
+
+
+/* Center the hamburger menu and expanded options in mobile view */
+@media (max-width: 576px) {
+    .fontSize46 {
+        font-size: 36px;
+    }
+    .fontSize30 {
+        font-size: 20px;
+    }
+    
+    
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        /* Stack menu items vertically */
+        justify-content: center;
+        /* Center vertically */
+        align-items: center;
+        /* Center horizontally */
+        /* Take full height of the screen */
+    }
+
+    .navbar-nav {
+        width: 100%;
+        /* Make nav items take full width */
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+        /* Add some spacing between items */
+    }
+
+    .box {
+        border: 1px solid #cf8b5c;
+        border-radius: 5px;
+        text-align: center;
+        height: 100%;
+    }
+
+    .box p {
+        color: #f45d2a;
+    }
+
+    .imgOuter img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-inner,
+    .carousel-item {
+        height: 300px;
+        /* Example height, adjust as necessary */
+    }
+}
