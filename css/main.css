@@ -10,6 +10,13 @@ html {
 }
 
 
+.imageOuter{
+    width: 50px;
+
+}
+.imageOuter2{
+    width: 165px;
+}
 
 #backToTopBtn {
     display: none;
@@ -272,7 +279,7 @@ html {
 /* General nav-link styling */
 .nav-link {
     font-family: Poppins-Regular !important;
-    font-size: 20px !important;
+    font-size: 15px;
     color: #f45d2a;
     /* Default color */
     transition: color 0.3s ease;
@@ -392,6 +399,7 @@ html {
     font-size: 22px;
 }
 
+
 /* Ensure the close button is orange */
 .btn-close {
     --bs-btn-close-color: #f45d2a !important;
@@ -446,6 +454,15 @@ html {
 
 /* Center the hamburger menu and expanded options in mobile view */
 @media (max-width: 576px) {
+    .imageOuter{
+        width: 35px;
+        /* display: none; */
+    
+    }
+    .imageOuter2{
+        /* display: none; */
+        width: 120px;
+    }
     .fontSize46 {
         font-size: 36px;
     }
@@ -495,5 +512,12 @@ html {
     .carousel-item {
         height: 240px;
         /* Example height, adjust as necessary */
+    }
+
+    .navbar-nav {
+        margin: auto;
+        position: static;
+        right: 121px;
+        position: relative;
     }
 }
