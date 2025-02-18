@@ -14,8 +14,9 @@ html {
     width: 50px;
 
 }
+
 .imageOuter2{
-    width: 165px;
+    width:300px;
 }
 
 #backToTopBtn {
@@ -461,7 +462,8 @@ html {
     }
     .imageOuter2{
         /* display: none; */
-        width: 120px;
+        width: 150px;
+        
     }
     .fontSize46 {
         font-size: 36px;
@@ -519,5 +521,9 @@ html {
         position: static;
         right: 121px;
         position: relative;
+    }
+
+    .line-height-37{
+        line-height: 30px;
     }
 }

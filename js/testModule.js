@@ -4,16 +4,16 @@ import { products } from './data.js';  // Import products data
 
 // Function to display products based on selected category
 export function displayProducts(category) {
-    const productList = document.getElementById('productList');
+    let productList = document.getElementById('productList');
     productList.innerHTML = '';  // Clear any previous products
 
     // Get products for the selected category
-    const categoryProducts = products[category];
+    let categoryProducts = products[category];
 
     // Loop through products and display them
     categoryProducts.forEach(product => {
-        const productCard = document.createElement('div');
-        productCard.classList.add('col-md-3', 'mb-4');
+        let productCard = document.createElement('div');
+        productCard.classList.add('col-3', 'mb-4');
 
         productCard.innerHTML = `
             <div class="card">
