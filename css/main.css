@@ -9,6 +9,29 @@ html {
     /* overflow-x: hidden; */
 }
 
+/* View More/Less button styling */
+#toggleViewBtn {
+    background-color: #f45d2a;
+    color: black;
+    border: none;
+    font-family: Poppins-Regular;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    min-width: 150px;
+}
+
+#toggleViewBtn:hover {
+    background-color: #cf8b5c;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for button state change */
+#toggleViewBtn {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
 
 .imageOuter{
     width: 50px;
